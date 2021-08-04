@@ -13,13 +13,24 @@ console.groupEnd();
 
 // Código del triángulo
 console.group('Triángulos')
-function perimetroTriangulo(lado1, lado2, base) {
-    return lado1 + lado2 + base;
+function perimetroTriangulo(ladoA, ladoB, base) {
+    return ladoA + ladoB + base;
 }
 
-function areaTriangulo(base, altura) {
+function areaTriangulo(ladoA, ladoB, base) {
+    const altura = calcularAltura(ladoA, ladoB, base);
     return (base * altura) / 2;
 }
+
+function calcularAltura(ladoA, ladoB, base) {    
+    if(ladoA === ladoB && ladoA != base){
+        const altura = Math.sqrt((ladoA * ladoA) - ((base * base)/4));
+        return altura;
+    } else {
+        return("Su triangulo no es isósceles");
+    }
+}
+
 console.groupEnd();
 
 // Código del círculo
@@ -74,12 +85,14 @@ function calcularPerimetroTrianguo() {
 
 function calcularAreaTriangulo() {
     const inputBase = document.getElementById("InputTrianguloBase");
-    const inputAltura = document.getElementById("InputTrianguloAltura");
+    const inputLadoA = document.getElementById("InputTrianguloLadoA");
+    const inputLadoB = document.getElementById("InputTrianguloLadoB");
 
     const valueBase = parseInt(inputBase.value);
-    const valueAltura = parseInt(inputAltura.value);
+    const valueLadoA = parseInt(inputLadoA.value);
+    const valueLadoB = parseInt(inputLadoB.value);
     
-    const area = areaTriangulo(valueBase, valueAltura);
+    const area = areaTriangulo(valueLadoA, valueLadoB, valueBase);
     alert(area);
 }
 
