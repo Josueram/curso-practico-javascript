@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: "Muli", sans-serif;
+    font-size: 62.5%;
+    background-color: black;
+}
+.header {
+    width: 100%;
+    min-width: 360px;
+    height: 90px;
+    background-color: #f5e900;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header h1 {
+    font-size: 2.8rem;
+}
+.header p {
+    width: 90%;
+    margin: 5px auto;
+    font-size: 1.4rem;
+}
+.main-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.section-card {
+    width: 300px;
+    height: 260px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: solid 2px #f5e900;
+}
+.section-card h2 {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 1.8rem;
+    color: white;
+}
+.section-card p {
+    font-size: 1.4rem;
+    color: white;
+}
+.section-form label {
+    font-size: 1.4rem;
+    color: white;
+    margin: 10px 5px;
+}
+.section-form input {
+    width: 30px;
+    height: 20px;
+    margin: 10px auto;
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #f5e900;
+}
+.section-form button {
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #f5e900;
+
+}
+.form-cuadrado input {
+    width: 80%;
+}
+.form-circulo input {
+    width: 80%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .section-card {
+        width: 330px;
+        height: 280px;
+        padding: 20px;
+        background-color: black;
+        text-align: center;
+        margin-top: 60px;
+        border-radius: 10px;
+        border: solid 2px #f5e900;
+    }
+}
