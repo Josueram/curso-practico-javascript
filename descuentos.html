@@ -20,9 +20,17 @@
                 <input type="number" id="InputPrice">
                 <label for="InputDiscount">Escribe el descuento de tu producto: </label>
                 <input type="number" id="InputDiscount">
+                <label for="InputCupon">Ingresa un cupón: </label>
+                <input type="text" id="InputCupon">
                 <button type="button" onclick="precioConDescuento()">Calcular descuento</button>
                 <p id="resultPrice"></p>
             </form>
+        </section>
+        <section class="section-card">
+            <h2>Cupones disponibles</h2>
+            <p>Para usuarios nuevos: <strong>new</strong></p>
+            <p>Para compras de más de $100: <strong>de15</strong></p>
+            <p>Para compras de más de $500: <strong>de35</strong></p>
         </section>
     </main>
     <script src="./descuentos.js"></script>
