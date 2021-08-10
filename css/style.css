@@ -35,7 +35,7 @@ html {
 }
 .section-card {
     width: 300px;
-    height: 260px;
+    height: 320px;
     padding: 10px;
     background-color: black;
     text-align: center;
@@ -70,6 +70,9 @@ html {
     border-right: 0px;
     border-bottom: 1px solid #f5e900;
 }
+.section-form p {
+    margin-top: 25px;
+}
 /* Quitar las flechas de los inputs */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -97,7 +100,7 @@ input[type="number"]::-webkit-inner-spin-button {
 @media only screen and (min-width: 1024px) {
     .section-card {
         width: 330px;
-        height: 280px;
+        height: 320px;
         padding: 20px;
         background-color: black;
         text-align: center;
